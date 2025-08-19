@@ -8,9 +8,8 @@ output_file = 'duplicatesImportantFieldsEnhanced.csv'
 processing_columns = ['LASTNAME', 'FIRSTNAME', 'PERSONEMAIL', 'PERSONBIRTHDATE', 'PERSONMAILINGSTREET', 'PERSONMAILINGCITY', 'PERSONMAILINGSTATE']
 
 # Columns to include in the output file (replace with your 10-20 desired fields)
-output_columns = ['LASTNAME', 'FIRSTNAME', 'PERSONEMAIL', 'PERSONBIRTHDATE', 'AH_CASE_SAFE_ID__PC', 'AH_MEDICAL_RECORD_NUMBER__C', 'AH_PATIENT_MAILING_ADDRESS__C',
-                  'AH_PRIMARY_CARE_PROVIDER__C', 'CREATEDBYID', 'CREATEDDATE', 'HEALTHCLOUDGA__AGE__PC', 'HEALTHCLOUDGA__BIRTHDATE__PC', 'ID',
-                  'SYSTEMMODSTAMP', 'IMPORTTOMARKETINGCLOUD_HASEMAIL__C']  # Add your fields here
+output_columns = ['LASTNAME', 'FIRSTNAME', 'PERSONEMAIL', 'PERSONBIRTHDATE', 'CREATEDBYID', 'CREATEDDATE', 'ID',
+                  'SYSTEMMODSTAMP']  # Add your fields here
 
 # Combine processing and output columns to read from the input file
 read_columns = list(set(processing_columns + output_columns))  # Ensure no duplicates
